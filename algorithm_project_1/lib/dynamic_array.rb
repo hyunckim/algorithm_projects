@@ -32,7 +32,7 @@ class DynamicArray
   # resize.
   def push(val)
     @length+=1
-    resize! if @store.length > @capacity
+    resize! if @length > @capacity
     @store[@length] = val
   end
 
