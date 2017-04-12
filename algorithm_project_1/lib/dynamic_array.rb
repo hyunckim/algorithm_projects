@@ -31,9 +31,9 @@ class DynamicArray
   # O(1) ammortized; O(n) worst case. Variable because of the possible
   # resize.
   def push(val)
-    resize! if @store.length == @length
-    @store[@length] = val
     @length+=1
+    resize! if @store.length > @capacity
+    @store[@length] = val
   end
 
   # O(n): has to shift over all the elements.
@@ -50,7 +50,7 @@ class DynamicArray
   # O(n): has to shift over all the elements.
   def unshift(val)
     @length +=1
-    resize! if @length == @capacity
+    resize! if @length > @capacity
     @length.downto(1) do |i|
       @store[i] = @store[i-1]
     end
