@@ -31,9 +31,7 @@ class DynamicArray
   # O(1) ammortized; O(n) worst case. Variable because of the possible
   # resize.
   def push(val)
-    if @store.length == @length
-      resize!
-    end
+    resize! if @store.length == @length
     @store[@length] = val
     @length+=1
   end
