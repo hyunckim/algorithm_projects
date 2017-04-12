@@ -50,9 +50,7 @@ class DynamicArray
   # O(n): has to shift over all the elements.
   def unshift(val)
     @length +=1
-    if @length == @capacity
-      resize!
-    end
+    resize! if @length == @capacity
     @length.downto(1) do |i|
       @store[i] = @store[i-1]
     end
