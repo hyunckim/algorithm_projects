@@ -13,8 +13,10 @@ class Link
   end
 
   def remove
-    self.prev = self.next
-    self.next = self.prev
+    previous = self.prev
+    next_node = self.next
+    previous.next = next_node
+    next_node.prev = previous
   end
 end
 
@@ -76,10 +78,7 @@ class LinkedList
   def remove(key)
     self.each do |node|
       if node.key == key
-        previous = node.prev
-        next_node = node.next
-        previous.next = next_node
-        next_node.prev = previous
+        node.remove
       end
     end
   end
