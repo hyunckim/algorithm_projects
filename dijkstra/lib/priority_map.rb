@@ -44,11 +44,10 @@ class PriorityMap
   def insert(key, value)
     @map[key] = value
     @queue.push(key)
-    nil
   end
 
   def update(key, value)
-    throw "tried to update non-existent key" unless @map.key?(key)
+    throw "the key does not exist" unless @map.key?(key)
     @map[key] = value
     @queue.reduce!(key)
   end
