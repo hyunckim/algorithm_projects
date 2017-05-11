@@ -58,3 +58,40 @@ function gcd(a, b) {
 }
 console.log("===Between Two Sets===");
 console.log(betweenTwoSets([2, 4], [16, 32, 96]) === 3);
+
+/*
+Maria plays  games of college basketball in a season. Because she wants
+to go pro, she tracks her points scored per game sequentially in an
+array defined as s. After each game i, she checks to see if score s[i]
+breaks her record for most or least points scored so far during that
+season.
+
+Given Maria's array of s for a season of n games, find and print the
+number of times she breaks her record for most and least points scored
+during the season.
+*/
+
+function recordBreak(s) {
+  let bestScore = s[0];
+  let worstScore = s[0];
+
+  let bestRec = 0;
+  let worstRec = 0;
+
+  for(let i = 1; i < s.length ; i ++) {
+    if (s[i] > bestScore) {
+      bestRec += 1;
+      bestScore = s[i];
+    }
+
+    if (s[i] < worstScore) {
+      worstRec += 1;
+      worstScore = s[i];
+    }
+  }
+
+  return [bestRec, worstRec];
+}
+
+console.log("===Record Break===");
+console.log(recordBreak([10, 5, 20, 20, 4, 5, 2, 25, 1]));
