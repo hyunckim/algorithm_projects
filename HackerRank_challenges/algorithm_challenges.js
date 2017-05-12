@@ -106,3 +106,11 @@ for his birthday, which falls on month m and day d. Lily only wants to
 give Ron a piece of chocolate if it contains m consecutive squares
 whose integers sum to d.
 */
+
+function birthdayChocolate() {
+
+}
+
+console.log("===Birthday Chocolate===");
+console.log(birthdayChocolate([1, 2, 1, 3, 2], [3, 2]) === 2);
+console.log(birthdayChocolate([1, 1, 1, 1, 1, 1], [3, 2]) === 0);
