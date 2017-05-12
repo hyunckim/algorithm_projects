@@ -97,3 +97,12 @@ console.log("===Record Break===");
 
 // returns [2, 4]
 console.log(recordBreak([10, 5, 20, 20, 4, 5, 2, 25, 1]));
+
+
+/*
+Lily has a chocolate bar consisting of a row of n squares where each
+square has an integer written on it. She wants to share it with Ron
+for his birthday, which falls on month m and day d. Lily only wants to
+give Ron a piece of chocolate if it contains m consecutive squares
+whose integers sum to d.
+*/
