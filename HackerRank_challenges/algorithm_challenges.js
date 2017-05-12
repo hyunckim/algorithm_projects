@@ -51,9 +51,8 @@ function lcm(a, b) {
 }
 
 function gcd(a, b) {
-  if (!b) {
-    return a;
-  } else { return gcd(b, a % b); }
+  if (!b) { return a; }
+  else { return gcd(b, a % b); }
 }
 console.log("===Between Two Sets===");
 console.log(betweenTwoSets([2, 4], [16, 32, 96]) === 3);
