@@ -94,4 +94,6 @@ function recordBreak(s) {
 }
 
 console.log("===Record Break===");
+
+// returns [2, 4]
 console.log(recordBreak([10, 5, 20, 20, 4, 5, 2, 25, 1]));
