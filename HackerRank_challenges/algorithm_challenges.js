@@ -9,9 +9,8 @@ determine if they'll ever land at the same location at the same time?
 */
 
 function kangaroo(x1, v1, x2, v2) {
-  if ( v1 > v2 && ((x2 - x1) % (v1 - v2)) === 0) {
-    return true;
-  } else { return false; }
+  if ( v1 > v2 && ((x2 - x1) % (v1 - v2)) === 0) { return true; }
+  else { return false; }
 }
 console.log("====Kangaro===");
 console.log(kangaroo(0, 3, 4, 2) === true);
