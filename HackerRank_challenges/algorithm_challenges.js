@@ -105,7 +105,7 @@ give Ron a piece of chocolate if it contains m consecutive squares
 whose integers sum to d.
 */
 
-function birthdayChocolate() {
+function birthdayChocolate(chocolate, birthday) {
 
 }
 
