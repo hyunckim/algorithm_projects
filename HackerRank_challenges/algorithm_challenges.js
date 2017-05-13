@@ -106,11 +106,10 @@ whose integers sum to d.
 */
 
 function birthdayChocolate(squares, d, m) {
-
   let count = 0;
   let sum;
 
-  for (let i = 0; i < squares.length - m; i++) {
+  for (let i = 0; i <= squares.length - m + 1; i++) {
     sum = 0;
     for (let j=0; j < m; j++) {
       sum += squares[i + j];
