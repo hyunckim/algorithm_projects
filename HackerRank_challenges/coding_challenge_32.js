@@ -17,3 +17,7 @@ function a(binary) {
 
     return binary + t;
 }
+
+function getMaxMonsters(n, hit, t, h) {
+  
+}
