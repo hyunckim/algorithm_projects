@@ -19,5 +19,12 @@ function a(binary) {
 }
 
 function getMaxMonsters(n, hit, t, h) {
-  
+
+  if (t === 0) {
+    return h.filter((el) => {
+      return el <= 0;
+    }).length;
+  }
+
+  return getMaxMonsters(n, hit, t-1, h);
 }
