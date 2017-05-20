@@ -14,7 +14,6 @@ function a(binary) {
             t += "0";
         } else { t += "1"; }
     }
-
     return binary + t;
 }
 
@@ -25,6 +24,5 @@ function getMaxMonsters(n, hit, t, h) {
       return el <= 0;
     }).length;
   }
-
   return getMaxMonsters(n, hit, t-1, h);
 }

@@ -122,3 +122,7 @@ function birthdayChocolate(squares, d, m) {
 console.log("===Birthday Chocolate===");
 console.log(birthdayChocolate([1, 2, 1, 3, 2], 3, 2) === 2);
 console.log(birthdayChocolate([1, 1, 1, 1, 1, 1], 3, 2) === 0);
+
+function divisibleSumPairs() {
+  
+}
